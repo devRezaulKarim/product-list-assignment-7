@@ -26,7 +26,7 @@
 }
 
 .wrapper .form-container {
-  width: 500px;
+  max-width: 500px;
   /* height: 440px; */
   background-color: #e4e4e4;
   margin: 20px auto;
@@ -39,7 +39,7 @@
 }
 
 .wrapper .view-container {
-  width: 600px;
+  max-width: 600px;
   background-color: #e4e4e4;
   margin: 20px auto;
   padding: 20px;
@@ -62,4 +62,8 @@ tbody {
   display: block;
   }
   
+  .wrapper .form-container {
+    width: 400px;
+
+  }
 }
