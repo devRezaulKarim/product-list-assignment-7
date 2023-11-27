@@ -26,8 +26,7 @@
 }
 
 .wrapper .form-container {
-  max-width: 500px;
-  /* height: 440px; */
+  width: 500px;
   background-color: #e4e4e4;
   margin: 20px auto;
   padding: 20px;
@@ -59,11 +58,10 @@ tbody {
 
 @media (max-width: 992px) {
   .wrapper .main {
-  display: block;
+    display: block;
   }
-  
+
   .wrapper .form-container {
     width: 400px;
-
   }
 }

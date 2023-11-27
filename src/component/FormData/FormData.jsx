@@ -25,7 +25,13 @@ export default function InputForm({ products, productsSet: setProducts }) {
       alert("Please a Choose Color");
       return;
     }
-
+    const idCheck = products.filter((pro) => {
+      pro.productId === productId;
+    });
+    if (idCheck) {
+      alert("Please do not repeat product ID");
+      return;
+    }
     setProducts(() => {
       const updateVal = [
         ...products,
@@ -33,7 +39,6 @@ export default function InputForm({ products, productsSet: setProducts }) {
       ];
       return updateVal;
     });
-
     clearInput();
     e.preventDefault();
   };
