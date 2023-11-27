@@ -25,10 +25,12 @@ export default function InputForm({ products, productsSet: setProducts }) {
       alert("Please a Choose Color");
       return;
     }
-    const idCheck = products.filter((pro) => {
-      pro.productId === productId;
-    });
-    if (idCheck) {
+    const idCheck = products.reduce((pre, cur) => {
+      pre.push(cur.productId);
+      return pre;
+    }, []);
+
+    if (idCheck.includes(productId)) {
       alert("Please do not repeat product ID");
       return;
     }
